@@ -1,0 +1,13 @@
+﻿{% extends "base.html" %}
+{% block content %}
+    <h2>Question: {{ question }}</h2>
+    <form method="post">
+        <div class="form-group">
+            <label for="answer">Answer: </label>
+            <input name="submittedAnswer" type="text" class="form-control" placeholder="Answer" />
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary">Submit Question</button>
+        </div>
+    </form>
+{% endblock %}

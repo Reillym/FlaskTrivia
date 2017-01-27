@@ -1,0 +1,10 @@
+﻿{% extends "base.html" %}
+{% block content %}
+    <div class="text-center">
+        <h2>Sorry, you are incorrect!</h2>
+        <div>
+            <p>The answer is: {{ answer }}</p>
+            <p>You said: {{ submittedAnswer }}</p>
+        </div>
+    </div>
+{% endblock %}
